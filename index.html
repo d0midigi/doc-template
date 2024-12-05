@@ -279,47 +279,107 @@
       </div>
      <nav id="docs-nav" class="docs-nav navbar">
   <ul class="section-items list-unstyled nav flex-column pb-3">
-    <!-- Dropdown for Introduction -->
-    <li class="nav-item dropdown section-title">
-      <a class="nav-link dropdown-toggle" href="#section-1" data-bs-toggle="dropdown" aria-expanded="false">Introduction</a>
-      <ul class="dropdown-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="#item-1-1">Section Item 1.1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#item-1-2">Section Item 1.2</a>
-        </li>
-        <!-- Nested Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#item-1-3" data-bs-toggle="dropdown" aria-expanded="false">Section Item 1.3</a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#item-1-3-1">Section Item 1.3.1</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#item-1-3-2">Section Item 1.3.2</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#item-1-4">Section Item 1.4</a>
-        </li>
-      </ul>
-    </li>
-    <!-- Another Dropdown Example -->
-    <li class="nav-item dropdown section-title">
-      <a class="nav-link dropdown-toggle" href="#section-2" data-bs-toggle="dropdown" aria-expanded="false">Another Section</a>
-      <ul class="dropdown-menu">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS for collapsible menu -->
+    <style>
+        .collapsible-menu {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .collapsible-menu > li {
+            margin: 10px 0;
+        }
+
+        .padding {
+            padding-left: 10px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label > .fa-chevron-right {
+            transform: rotate(0);
+            transition: transform 0.3s ease;
+        }
+
+        input[type="checkbox"]:checked + label > .fa-chevron-right {
+            transform: rotate(90deg);
+        }
+
+        ul.collapsible-menu ul {
+            display: none;
+            padding-left: 20px;
+        }
+
+        input[type="checkbox"]:checked ~ ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Configuration</h1>
+    <ul id="R-subsections-6f6dce359ca8d596b5b1de1969a0aca2" class="collapsible-menu">
         <li>
-          <a class="dropdown-item" href="#item-2-1">Section Item 2.1</a>
+            <input type="checkbox" id="R-section-30019b7214c19b7e47568868fc6b6f47">
+            <label for="R-section-30019b7214c19b7e47568868fc6b6f47">
+                <i class="fa-fw fas fa-chevron-right"></i>
+                <span>Site Management</span>
+            </label>
+            <a class="padding" href="/hugo-theme-relearn/configuration/sitemanagement/index.html">
+                Overview
+            </a>
+            <ul id="R-subsections-30019b7214c19b7e47568868fc6b6f47" class="collapsible-menu">
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/sitemanagement/structure/index.html">
+                        Directory Structure
+                    </a>
+                </li>
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/sitemanagement/multilingual/index.html">
+                        Multilingual
+                    </a>
+                </li>
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/sitemanagement/meta/index.html">
+                        Meta Information
+                    </a>
+                </li>
+            </ul>
         </li>
         <li>
-          <a class="dropdown-item" href="#item-2-2">Section Item 2.2</a>
+            <input type="checkbox" id="R-section-f4b18c0bbd92c3635c0cb3ea3fa97f55">
+            <label for="R-section-f4b18c0bbd92c3635c0cb3ea3fa97f55">
+                <i class="fa-fw fas fa-chevron-right"></i>
+                <span>Branding</span>
+            </label>
+            <a class="padding" href="/hugo-theme-relearn/configuration/branding/index.html">Overview</a>
+            <ul id="R-subsections-f4b18c0bbd92c3635c0cb3ea3fa97f55" class="collapsible-menu">
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/branding/logo/index.html">
+                        Logo
+                    </a>
+                </li>
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/branding/colors/index.html">
+                        Colors
+                    </a>
+                </li>
+                <li>
+                    <a class="padding" href="/hugo-theme-relearn/configuration/branding/modules/index.html">
+                        Module Theming
+                    </a>
+                </li>
+            </ul>
         </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    </ul>
 
           <li class="nav-item section-title">
             <a class="nav-link scrollto" href="#section-2">Installation</a>
