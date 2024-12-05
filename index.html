@@ -372,7 +372,103 @@
 </style>
 
 </head>
+<div style="background: rgb(0, 0, 0); color: white; max-width: 400px; padding: 20px;">
+  <!--Section 1-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 1: Introduction</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>Introduction to Spanning-Tree Protocol (STP)</li>
+        <li>Spanning-Tree Coast Calculation</li>
+        <li>Spanning-Tree Port States</li>
+        <li>Spanning-Tree TCN (Topology Change Notification)</li></ul></div>
+  </div>
+  
+  <!--Section 2-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 2: PVST (Per VLAN Spanning-Tree)</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>PVST (Per VLAN Spanning-Tree)</li>
+        <li>Spanning-Tree Root Bridge Configuration</li></ul></div>    
+    </div>
+  
+  <!--Section 3-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 3: RST (Rapid Spanning-Tree)</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>Introduction to Rapid Spanning-Tree (RST)</li>
+        <li>Rapid Spanning-Tree Configuration</li></ul></div>
+  </div>
+  
+  <!--Section 4-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 4: MST (Multiple Spanning-Tree)</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>Introduction to Multiple Spanning-Tree (MST)</li>
+        <li>MST and PVST+ Interoperability</li></ul></div>
+  </div>
+  
+  <!--Section 5-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 5: Spanning-Tree Protocol (STP) Toolkit</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>Spanning-Tree BPDUGuard</li>
+        <li>Spanning-Tree BPDUFilter</li>
+        <li>Spanning-Tree RootGuard</li>
+        <li>Spanning-Tree LoopGuard and UDLD</li>
+        <li>Spanning-Tree Dispute</li>
+        <li>Spanning-Tree Bridge Assurance</li>
+        <li>Spanning-Tree Portfast</li>
+        <li>Portfast/STP Interaction</li>
+        <li>Spanning-Tree UplinkFast</li>
+        <li>Spanning-Tree Backbone Fast</li></ul></div>
+  </div>
+  
+  <!--Section 6-->
+  <div class="OTMaccordionElement" style="border-bottom: 1px solid rgb(255, 255, 255); margin-bottom: 10px; padding-bottom: 10px;">
+    <div class="OTMaccordionTitle" style="cursor: pointer;">
+      <span class="OTMaccordionIcon" style="margin-right: 10px;">+</span><strong>Unit 6: Troubleshooting</strong>
+    </div>
+    <div class="OTMaccordionContent" style="display: none;">
+      <ul>
+        <li>Troubleshooting Spanning-Tree Protocol (STP)</li>
+        <li>Spanning-Tree Protocol (STP) Limitations</li></ul>
+<style>
+.OTMaccordionTitle:hover {
+    background: #333;
+}
+.OTMaccordionIcon {
+    font-weight: bold;
+}
+</style>
 
+<script>
+document.querySelectorAll('.OTMaccordionTitle').forEach(title => {
+    title.addEventListener('click', () => {
+        const content = title.nextElementSibling;
+        const icon = title.querySelector('.OTMaccordionIcon');
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        icon.textContent = content.style.display === 'block' ? '-' : '+';
+    });
+});
+</script>
+</div></div></div>
+
+    
     <div class="column-container">
     <div class="custom-select">
         <select>
