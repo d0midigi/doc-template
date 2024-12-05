@@ -327,8 +327,66 @@
         input[type="checkbox"]:checked ~ ul {
             display: block;
         }
-    </style>
+      <style>
+.custom-select {
+    position: relative;
+    width: 48%; /* Adjusted for two columns */
+    display: inline-block; /* Display columns inline */
+    margin: 1%; /* Margin for spacing between columns */
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: #000000;
+    border: 1px solid #AE90EB;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 3px 3px 1px -2px #07C5FF;
+}
+
+.custom-select select:focus {
+    background: #000000;
+    border: 1px groove #09D8F8;
+    border-radius: 5px;
+}
+
+.custom-select::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+}
+
+.column-container {
+    display: flex; /* Flexbox for two columns */
+    justify-content: space-between; /* Space between columns */
+}
+</style>
+
 </head>
+
+    <div class="column-container">
+    <div class="custom-select">
+        <select>
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+        </select>
+    </div>
 <ul id="R-subsections-6f6dce359ca8d596b5b1de1969a0aca2" class="collapsible-menu">
     <li>
         <input type="checkbox" id="R-section-30019b7214c19b7e47568868fc6b6f47">
