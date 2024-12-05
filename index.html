@@ -3,6 +3,9 @@
 
 <head>
   <title>Doc</title>
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
   <!-- Meta -->
   <meta charset="utf-8">
@@ -37,6 +40,19 @@
     .hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}
 
     /* Theme css */
+    .navbar .dropdown-menu {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 5px;
+}
+
+.navbar .dropdown-item {
+  color: #212529; /* Text color */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #e9ecef; /* Highlight color */
+}
+
     body{color:#5d6778;padding-top:69px}
     h1,h2,h3,h4,h5,h6{font-family:Poppins,sans-serif;color:#252930;font-weight:600}
     .table-bordered td,.table-bordered th{border-color:#e7e9ed}
@@ -262,31 +278,49 @@
           </button>
         </form>
       </div>
-      <nav id="docs-nav" class="docs-nav navbar">
-        <ul class="section-items list-unstyled nav flex-column pb-3">
-          <li class="nav-item section-title">
-            <a class="nav-link scrollto" href="#section-1">Introduction</a>
-            <ul class="nav flex-column mt-2 lvl2">
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-1">Section Item 1.1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a>
-              </li>
-            </ul>
-          </li>
+     <nav id="docs-nav" class="docs-nav navbar">
+  <ul class="section-items list-unstyled nav flex-column pb-3">
+    <!-- Dropdown for Introduction -->
+    <li class="nav-item dropdown section-title">
+      <a class="nav-link dropdown-toggle" href="#section-1" data-bs-toggle="dropdown" aria-expanded="false">Introduction</a>
+      <ul class="dropdown-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#item-1-1">Section Item 1.1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#item-1-2">Section Item 1.2</a>
+        </li>
+        <!-- Nested Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#item-1-3" data-bs-toggle="dropdown" aria-expanded="false">Section Item 1.3</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#item-1-3-1">Section Item 1.3.1</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#item-1-3-2">Section Item 1.3.2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#item-1-4">Section Item 1.4</a>
+        </li>
+      </ul>
+    </li>
+    <!-- Another Dropdown Example -->
+    <li class="nav-item dropdown section-title">
+      <a class="nav-link dropdown-toggle" href="#section-2" data-bs-toggle="dropdown" aria-expanded="false">Another Section</a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" href="#item-2-1">Section Item 2.1</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#item-2-2">Section Item 2.2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
           <li class="nav-item section-title">
             <a class="nav-link scrollto" href="#section-2">Installation</a>
@@ -2776,6 +2810,8 @@
       });
     }, false);
   </script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
