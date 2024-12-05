@@ -356,6 +356,186 @@
     </li>
 </ul>
 
+<!--[ Customized Menu ]-->
+<div class="slide-menu-flex">
+  <div class="mobile-menu-wrap" id="mobile-menu-wrap">
+    <div class="mobile-menu">
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Features</a>
+          <ul class="submenu">
+            <li><a href="#">DropDown 1</a></li>
+            <li><a href="#">DropDown 2</a></li>
+            <li><a href="#">DropDown 3</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Multi DropDown</a>
+          <ul class="submenu">
+            <li>
+              <a href="#">SubItem 1</a>
+              <ul class="nested-submenu">
+                <li><a href="#">Nested 1</a></li>
+                <li>
+                  <a href="#">SubNested</a>
+                  <ul class="subnested-menu">
+                    <li><a href="#">SubNested 1</a></li>
+                    <li><a href="#">SubNested 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Nested 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">SubItem 2</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">SiteMap</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Documentation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-menu-wrap" id="mobile-menu-wrap">
+    <div class="mobile-menu">
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Features</a>
+          <ul class="submenu">
+            <li><a href="#">DropDown 1</a></li>
+            <li><a href="#">DropDown 2</a></li>
+            <li><a href="#">DropDown 3</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Multi DropDown</a>
+          <ul class="submenu">
+            <li>
+              <a href="#">SubItem 1</a>
+              <ul class="nested-submenu">
+                <li><a href="#">Nested 1</a></li>
+                <li>
+                  <a href="#">SubNested</a>
+                  <ul class="subnested-menu">
+                    <li><a href="#">SubNested 1</a></li>
+                    <li><a href="#">SubNested 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Nested 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">SubItem 2</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">SiteMap</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Documentation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+<style>
+.slide-menu-flex {
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item > a:hover {
+  background-color: #e0e0e0;
+}
+
+.submenu,
+.nested-submenu,
+.subnested-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Hidden by default */
+}
+
+.submenu li,
+.nested-submenu li,
+.subnested-menu li {
+  padding-left: 20px;
+}
+
+.menu-item.open > .submenu,
+.submenu li.open > .nested-submenu,
+.nested-submenu li.open > .subnested-menu {
+  display: block; /* Show when open */
+}
+
+.submenu a,
+.nested-submenu a,
+.subnested-menu a {
+  padding: 8px;
+  text-decoration: none;
+  color: #555;
+}
+
+.submenu a:hover,
+.nested-submenu a:hover,
+.subnested-menu a:hover {
+  background-color: #d9d9d9;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuItems = document.querySelectorAll('.menu-item > a, .submenu > li > a, .nested-submenu > li > a');
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', function (e) {
+      const parentItem = this.parentElement;
+      const isOpen = parentItem.classList.contains('open');
+
+      // Close all open dropdowns at this level
+      const siblings = parentItem.parentElement.querySelectorAll('li');
+      siblings.forEach(sib => sib.classList.remove('open'));
+
+      // Toggle the clicked dropdown
+      if (!isOpen) {
+        parentItem.classList.add('open');
+      }
+
+      e.preventDefault(); // Prevent default anchor behavior
+    });
+  });
+});
+</script>
+
           <li class="nav-item section-title">
             <a class="nav-link scrollto" href="#section-2">Installation</a>
             <ul class="nav flex-column mt-2 lvl2">
