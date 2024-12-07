@@ -107,74 +107,68 @@
 
   <div class="flex flex-col md:flex-row lg:flex-row">
     <!-- Side menu starts here -->
-    <nav class="flex ml-10 mt-7 md:fixed lg:fixed" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
-      role="navigation">
-      <ul class="nav">
+   <nav class="flex ml-12 mt-10 md:fixed lg:fixed" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+    <ul class="nav">
         <li class="font-normal"><a href="#link1">Principles and Key Ideas</a></li>
-        <li class="font-normal">
-          <a href="#link2">Cyber Threats and Attacks</a>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[200] border-l-[2px]">
-          <li class="font-normal">
-              <a href="#link3">Network Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-           <li class="font-normal">
-              <a href="#link4">Endpoint Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-           <li class="font-normal">    
-              <a href="#link5">Application Security</a>
-            </li>
-             <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link6">Logging and Monitoring</a>
-             </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link7">Cryptography</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link8">Hypervisor Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link9">Active Directory</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link10">Wireless Network Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link11">IoT Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">  
-              <a href="#link12">Authentication Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link13">Virtualization Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link14">Data Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link15">Blockchain Security</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link16">Zero Trust</a>
-            </li>
-            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
-            <li class="font-normal">
-              <a href="#link17">Miscellaneous</a>
-            </li>
-      </ul>
-    </nav>
+        <li class="font-normal"><a href="#link2">Cyber Threats and Attacks</a></li>
+        <li class="font-normal"><a href="#link3">Network Security</a></li>
+        <li class="font-normal"><a href="#link4">Endpoint Security</a></li>
+        <li class="font-normal"><a href="#link5">Application Security</a></li>
+        <li class="font-normal"><a href="#link6">Logging and Monitoring</a></li>
+        <li class="font-normal"><a href="#link7">Cryptography</a></li>
+        <li class="font-normal"><a href="#link8">Hypervisor Security</a></li>
+        <li class="font-normal"><a href="#link9">Active Directory</a></li>
+        <li class="font-normal"><a href="#link10">Wireless Network Security</a></li>
+        <li class="font-normal"><a href="#link11">IoT Security</a></li>
+        <li class="font-normal"><a href="#link12">Authentication Security</a></li>
+        <li class="font-normal"><a href="#link13">Virtualization Security</a></li>
+        <li class="font-normal"><a href="#link14">Data Security</a></li>
+        <li class="font-normal"><a href="#link15">Blockchain Security</a></li>
+        <li class="font-normal"><a href="#link16">Zero Trust</a></li>
+        <li class="font-normal"><a href="#link17">Miscellaneous</a></li>
+    </ul>
+</nav>
+
+<style>
+/* Navigation Styles */
+nav {
+    background-color: #f8f9fa; /* Light background for better readability */
+    border-radius: 8px; /* Rounded edges */
+    padding: 15px; /* Padding for inner spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.nav {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav li {
+    margin: 10px 0; /* Add spacing between list items */
+}
+
+.nav li a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Default link color */
+    font-weight: 500; /* Slightly bold for readability */
+    padding: 8px 15px; /* Add padding inside links */
+    display: block; /* Make the entire link clickable */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+.nav li a:hover {
+    background-color: #007bff; /* Highlight background on hover */
+    color: #fff; /* White text on hover */
+    border-radius: 4px; /* Rounded corners for hover effect */
+}
+
+/* Adjust positioning to avoid hugging borders or sidebar */
+.md\:fixed, .lg\:fixed {
+    left: 20px; /* Add spacing from the sidebar */
+    top: 80px; /* Adjust distance from the top */
+}
+</style>
     <!-- Side Menu ends here -->
 
     <div class="pl-5 md:pl-[250px] lg:pl-[250px]">
